@@ -1,0 +1,79 @@
+plugin:
+  regular-quizzes:
+    #This name is used in the commands
+    quiz1:
+      #Machine generated, do NOT touch!
+      completed: []
+      #The amount of questions you have to solve right to pass the quiz
+      pass-amount: 1
+      #The time in between players should answer the questions, in minutes
+      timeout: 5
+      questions:
+        #The question names don't matter, but they should be different in the same quiz
+        question1:
+          question: "&a%player%, what is 1 + 1?"
+          choices: [ "&a1", "&b2", "&c3", "&d4" ]
+          answer: "2"
+      #Optional: Run commands / send messages - %player% -> Name of the player
+      pass-actions:
+        run-command: "/lp user %player% parent set QuizPassedGroup"
+        broadcast: "&5&l%player% &5has passed the MySuperQuiz quiz!"
+      #Optional: Run commands / send messages - %player% -> Name of the player
+      fail-actions:
+        run-command: "/lp user %player% parent set QuizFailedGroup"
+        broadcast: "&4&l%player% &chas failed the MySuperQuiz quiz :("
+    #This name is used in the commands
+    quiz2:
+      #Machine generated, do NOT touch!
+      completed: []
+      #The amount of questions you have to solve right to pass the quiz
+      pass-amount: 1
+      #The time in between players should answer the questions, in minutes
+      timeout: 5
+      #Example to show you that you can leave the optional stuff -> pretty useless I guess
+      questions:
+        #The question names don't matter, but they should be different in the same quiz
+        question1:
+          question: "%player%, what is 4 + 2?"
+          choices: ["3", "4", "5", "6"]
+          answer: "6"
+  deciding-quizzes:
+    #This name is used in the commands
+    quiz3:
+      #Machine generated, do NOT touch!
+      completed: []
+      #The time in between players should answer the questions, in minutes
+      timeout: 5
+      #Optional: Run commands / send messages - %player% -> Name of the player
+      finish-actions:
+        run-command: "/lp user %player% parent set QuizPassedGroup"
+        broadcast: "&5&l%player% &5has completed the MySuperQuiz quiz!"
+      questions:
+        #The question names don't matter, but they should be different in the same quiz
+        question1:
+          question: "%player%, if you were an animal which one of these would you eat?"
+          choices: ["Meat", "Chicken", "Hay"]
+          #Optional: Run commands / send messages - %player% -> Name of the player
+          answer-actions:
+            action1:
+              answer: "Meat"
+              actions:
+                run-command: "/lp user %player% parent set Meat"
+                broadcast: "&5&l%player% &5chose for Meat!"
+            action2:
+              answer: "Chicken"
+              actions:
+                run-command: "/lp user %player% parent set Chicken"
+                broadcast: "&5&l%player% &5chose for Chicken!"
+    #This name is used in the commands
+    quiz4:
+      #Machine generated, do NOT touch!
+      completed: []
+      #The time in between players should answer the questions, in minutes
+      timeout: 5
+      questions:
+        #The question names don't matter, but they should be different in the same quiz
+        question1:
+          question: "%player%, if you were an animal which one of these would you eat?"
+          choices: ["Meat", "Chicken", "Hay"]
+          #Example to show you that you can leave the optional stuff -> pretty useless I guess

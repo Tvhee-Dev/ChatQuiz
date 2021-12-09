@@ -1,0 +1,14 @@
+name: ChatQuiz
+main: me.tvhee.chatquiz.ChatQuizPlugin
+version: 1.0.0
+api-version: 1.13
+author: Tvhee
+commands:
+  chatquiz:
+    description: Start a new quiz
+    permission: chatquiz.command.quiz
+    usage: /<command> [quiz]
+    aliases: [cq]
+  chatquizreload:
+    description: Reload the plugin
+    aliases: [cqr]
